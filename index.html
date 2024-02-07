@@ -1,157 +1,179 @@
 <!DOCTYPE html>
+<html lang="fr">
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width", initial-scare="1.0">
-  <title>Wivine BOIDOUX_Portefolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap" rel="stylesheet">
-  <link href="node_modules/bootstrap/dist/css/bootstrap-grid.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <title>Wivine BOIDOUX - Portefolio</title>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
 
-  <!-- Header: nav bar -->
-  <header>
-    <!--  nav bar -->
-  <div class="menu_nav">
-  <nav aria-label="Menu principal">
-<a href="mailto:wivine.boidoux@gmail.com" title="Envoyer un e-mail">Me contacter par e-mail</a>
-<a href="tel:0613168762" title="Numéro mobile">Me contacter par téléphone</a>
-<a href="https://www.linkedin.com/in/wivineboidoux"target="_blank">Mon Linkedin</a>
-<a href="images/CV_STUDI.pdf" download>Télécharger mon CV</a>
-</nav>
-</div>
+  <!-- START : Header-->
+<header class="header">
+  <div class="container">
+    <div class="logo">
+      Wivine Boidoux
+    </div>
+    <nav class="navbar">
+      <ul class="menu list_unstyled">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="#about">A propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#portefolio">Portefolio</a></li>
+        <li><a href="#cv">Télécharger mon CV</a></li>
+        <li><a href="#contact">Me contacter</a></li>
+      </ul>
+    </nav>
+    <div class="right">
+      <ul class="social list-unstyled">
+        <li><a href="https://www.linkedin.com/in/wivineboidoux" target="_blank"><img class="icone_linkedin" src="images/linkedin.svg" alt="icone Linkedin"></a></li>
+      </ul>
+      <button class="burger"><span class="bar"></span></button>
+    </div>
+  </div>
 </header>
-<img class="photo-bureau" src="images/bureau.PNG" alt="Photo du bureau">
-    <!-- A propos -->
 
-      <h2 class="titre-a-propos">A propos de moi</h2>
-      <div class="fond_a_propos">
-    <img class="photo_profil" src="images/photo_profil.jpg" alt="Photo de profil">
-
-    <p class="introduction">"Hello ! C'est moi Wivine. Après sept années en tant que chargé d'affaires en banque, j'ai eu besoin de me recentrer sur mes valeurs humaines. Une reconversion professionnelle s'impose et pour m'aider à aspirer à ce nouveau challenge professionnel, j'ai effectué un bilan de compétences qui m'a replacée sur le chemin de l'informatique et de son univers si créatif. Actuellement en formation Graduate Développeur Front-end chez STUDI - Digital Campus, je suis à ce jour à la recherche un stage pour pouvoir approfondir mes connaissances et pratiques dans le développement web front-end."</p>
-  </div>
-
-
-<!-- Mes études -->
-<section>
-  <div class="etudes">
-    <h2>Mes études</h2>
-  <p class="intro_etudes">Après de longues études dans le domaine de l'agrobusiness et du management des entreprises agricoles, me voici de retour sur les bancs de l'école afin de pouvoir commencer ma reconversion professionnelle de la meilleure façon.</p>
-  <section class="etudes" id="etudes">
-    <div class="etudes_ecoles">
-      <div class="ecole">
-        <h3>Graduate Développeur Front-end</h3>
-        <h4>De 2023 à 2024</h4>
-        <img class="logo_ecole" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Studi_logo.svg/2560px-Studi_logo.svg.png" alt="Logo STUDI">
-      </div>
-
-      <div class="ecole">
-        <h3>Master 2 Management des Entreprises et Entrepreneuriat & Master 1 Management des Territoires et de l'Agrobusiness</h3>
-        <h4>De 2016 à 2018</h4>
-        <img class="logo_ecole" src="https://image-parcours.copainsdavant.com/image/750/1938244752/4280391.png" alt="Logo IHEDREA">
-      </div>
-
-      <div class="ecole">
-        <h3>Licence professionnelle Management des Entreprises Agricoles</h3>
-        <h4>De 2015 à 2016</h4>
-        <img class="logo_ecole" src="https://www.groupe-esa.com/wp-content/themes/esagp/esagp_img/logo.png" alt="Logo ESA">
+<!-- START: main -->
+<main>
+  <section id="hero" class="hero">
+    <div class="container">
+      <div class="grid">
+          <div class="hero__item left">
+            <h1 class="title">Hello ! Je suis Wivine Boidoux</h1>
+            <p class="title__description">Développeur front-end en formation</p>
+          </div>
+          <div class="hero__item right">
+            <div class="hero__avatar">
+              <img src="images/avatar.png" alt="Avatar Wivine Boidoux">
+            </div>
+          </div>
       </div>
     </div>
   </section>
 
-<!-- Mon portefolio -->
-<section>
-  <div class="portefolio">
-    <h2>Mon portefolio</h2>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis assumenda accusantium quia, perspiciatis laudantium odio delectus tempora id incidunt, aperiam repellendus sed commodi voluptas natus maiores eaque itaque adipisci soluta!</p>
-  </div>
-</section>
-
-
-  <!-- Section Expériences professionnelle
-  <section>
-    <div class="experiences">
-    <h2>Experiences</h2>
-    <ul>
-      <li>
-        <strong>2017 à aujourd'hui: Chargé d'affaires agricoles - Crédit Agricole Nord de France (alternance d'un an et 5 années de CDI)</strong>
-
-        <ul>
-          <li>Responsable et développement d’un portefeuille de clients agricoles et privés</li>
-          <li>Apporter des conseils personnalisés dans la problématique de chaque client</li>
-          <li>Proposer des solutions en rapport avec leur problématique ou besoin</li>
-          <li>Promouvoir les produits et services proposés par l’établissement bancaire</li>
-        </ul>
-      </li>
-        <br>
-
-      <li>
-        <strong>2016 à 2017: Conseillère d'entreprise agricoles - CERFRANCE (alternance d'un an)</strong>
-
-      <ul>
-        <li>Etude de projets: installation, cession, transmission</li>
-        <li>Déclaration PAC</li>
-        <li>Elaboration des budgets de trésorerie</li>
-        <li>Suivi des Jeunes Agriculteurs selon le cahier des charges</li>
-      </ul>
-      </li>
-<br>
-      <li>
-        <strong>2015 à 2016 - Assistante comptable - In Extenso Nord de France (stage 8 semaines)</strong>
-      
-      <ul>
-        <li>Saisie comptable</li>
-        <li>Réalisation de bilans et de liasses fiscales</li>
-        <li>Assister le directeur d'agence dans le développement du service agricole par la mise en place d'un outil de gestion des risques sur Excel
-          </li>
-      </ul>
-      </li>
+  <section id="about" class="about">
+    <div class="container">
+      <div class="grid">
+        <div class="grid__item">
+          <img class="about__item" src="images/photo_profil.jpg" alt="Wivine Boidoux - Développeur front-end">
+        </div>
+      <div class="grid__item">
+        <h2 class="section__title">A propos</h2>
+        <h3>Qui suis-je ?</h3>
+        <p>"Hello ! C'est moi Wivine. Après sept années en tant que chargé d'affaires en banque, j'ai eu besoin de me recentrer sur <strong>mes valeurs humaines</strong>.</p> 
+        <p>Une reconversion professionnelle s'impose et pour m'aider à aspirer à ce nouveau challenge professionnel, j'ai effectué un <strong>bilan de compétences</strong> qui m'a replacée sur le chemin de l'informatique et de son univers si créatif.</p>
+        <p>Actuellement en formation <strong>Graduate Développeur Front-end chez STUDI - Digital Campus</strong>, je suis à ce jour à la recherche un stage pour pouvoir approfondir mes connaissances et pratiques dans le développement web front-end."</p>
+      </div>
     </div>
   </section>
 
- Section Formations
-  <section>
-    <div class="formations">
-    <h2>Education</h2>
-    <ul>
-      <li>
-        <strong>Master 2 - Management des Entreprises et Entrepreneuriat - 2017 à 2018</strong>
-        <ul>
-          <li>IHEDREA - Paris, La Défense</li>
-        </ul>
-      </li>
-<br>
-      <li><strong>Master 1 - Management des Entreprises et Agrobusiness - 2016 à 2017</strong></li>
-        <ul>
-          <li>IHEDREA - Paris, Levallois-Perret</li>
-        </ul>
-    </ul>
-    <ul>
-<br>
-      <li>
-        <strong>Licence professionnelle - Management des Entreprises Agricoles - 2015 à 2016</strong>
-        <ul>
-          <li>Ecole Supérieur d'Agriculture - Angers</li>
-        </ul>
-      </li>
+
+  <section id="skills" class="skills">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Mes compétences</h2>
+        <p>Voici mes compétences acquises jusqu'à aujourd'hui. D'autres arriveront bientôt ...</p>
+      </div>
+      <div class="grid">
+        <div class="grid__item">
+          <div class="skills">
+            <div class="skills__icone">
+              <img src="images/icone_front.png" alt="icone compétences front-end">
+            </div>
+            <div class="skills__content">
+              <h3>Front-end</h3>
+              <p>Maquettes et mockups avec Figma et Lucid</p>
+              <p>HTML, CSS & Bootstrap</p>
+              <p>Responsive</p>
+            </div>
+          </div>
+          <div class="skills">
+            <div class="skills__icone">
+              <img src="images/icone_project.png" alt="icone compétences gestion de projets">
+            </div>
+            <div class="skills__content">
+              <h3>Gestion de projets</h3>
+              <p>Trello</p>
+              <p>Git & GitHub</p>
+            </div>
+          </div>
+          <div class="skills">
+            <div class="skills__icone">
+              <img src="images/icone_skills.png" alt="icone compétences savoir-être">
+            </div>
+            <div class="skills__content">
+              <h3>Soft-skills</h3>
+              <p>Autonomie</p>
+              <p>Gestion du temps</p>
+              <p>Curiosité</p>
+              <p>Esprit d'entraide & bienveillance</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid__item">
+        </div>
+      </div>
     </div>
-      <br>
-  <section> -->
-  <!-- Bootstrap-->
-  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </section>
+
+  <section id="portefolio" class="portefolio">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Portefolio</h2>
+        <img src="images/icone_construction.png" alt="icone portefolio en construction">
+        <p>En cours de construction</p>
+      </div>
+      <div class="grid">
+        <div class="grid__item">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Me contacter</h2>
+        <p>Si mon profil vous intéresse, n'hésitez pas à me contacter en utilisant le formulaire ci-dessous (en construction) ou via message sur Linkedin.</p>
+      </div>
+        <form action="contact.php" class="form">
+          <label for="firstname">
+            <input type="text" name="firstname" id="firstname" placeholder="Nom">
+          </label>
+          <label for="lastname">
+            <input type="text" name="lastname" id="lastname" placeholder="Prénom">
+          </label>
+          <label for="firstname">
+            <input type="email" name="email" id="email" placeholder="E-mail">
+          </label>
+          <textarea name="message" id="message" placeholder="Votre message"></textarea>
+          <input type="submit" value="Envoyer">
+        </form>    
+      </div>
+  </section>
+</main>
+<!-- END : main -->
+
+<!-- START: footer -->
 <footer>
-  <hr>
-  © Wivine Boidoux - Tous droits réservés
-
-  <hr>
+  <div class="container">
+    <div class="grid">
+      <div class="grid__item">
+        <p>Wivine Boidoux</p>
+      </div>
+      <div class="grid__item">
+        <p>© Copyright - Tous droits réservés</p>
+      </div>
+      <div class="grid__item">
+        <a href="https://www.linkedin.com/in/wivineboidoux" target="_blank"><img class="icone__footer_linkedin" src="images/linkedin.svg" alt="icone Linkedin"></a>
+      </div>
+    </div>
+  </div>
 </footer>
-
 </html>
