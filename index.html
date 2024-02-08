@@ -1,50 +1,62 @@
 <!DOCTYPE html>
 <html lang="fr">
-<html>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width", initial-scare="1.0">
+  <meta name="viewport" content="width=device-width", initial-scale="1.0">
   <title>Wivine BOIDOUX - Portefolio</title>
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/styles.css">
+
 </head>
 
 <body>
 
   <!-- START : Header-->
 <header class="header">
-  <div class="container">
-    <div class="logo">
-      Wivine Boidoux
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="images/favicon.ico"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#about">A propos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Compétences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portefolio">Portefolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="images/CV_STUDI.pdf" download="images/CV_STUDI.pdf">Télécharger mon CV</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Me contacter</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+          <ul class="social list-unstyled">
+            <li><a href="https://www.linkedin.com/in/wivineboidoux" target="_blank"><img class="icone_linkedin" src="images/linkedin_color.svg" alt="icone Linkedin"></a></li>
+          </ul>
+        </span>
+      </div>
     </div>
-    <nav class="navbar">
-      <ul class="menu list_unstyled">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="#about">A propos</a></li>
-        <li><a href="#skills">Compétences</a></li>
-        <li><a href="#portefolio">Portefolio</a></li>
-        <li><a href="#cv">Télécharger mon CV</a></li>
-        <li><a href="#contact">Me contacter</a></li>
-      </ul>
-    </nav>
-    <div class="right">
-      <ul class="social list-unstyled">
-        <li><a href="https://www.linkedin.com/in/wivineboidoux" target="_blank"><img class="icone_linkedin" src="images/linkedin.svg" alt="icone Linkedin"></a></li>
-      </ul>
-      <button class="burger"><span class="bar"></span></button>
-    </div>
-  </div>
+  </nav>
 </header>
 
 <!-- START: main -->
 <main>
   <section id="hero" class="hero">
-    <div class="container">
+    <div class="d-flex justify-content-evenly">
       <div class="grid">
           <div class="hero__item left">
             <h1 class="title">Hello ! Je suis Wivine Boidoux</h1>
-            <p class="title__description">Développeur front-end en formation</p>
+            <p class="title__description"><em>Développeur front-end en formation</em></p>
           </div>
           <div class="hero__item right">
             <div class="hero__avatar">
@@ -69,6 +81,7 @@
         <p>Actuellement en formation <strong>Graduate Développeur Front-end chez STUDI - Digital Campus</strong>, je suis à ce jour à la recherche un stage pour pouvoir approfondir mes connaissances et pratiques dans le développement web front-end."</p>
       </div>
     </div>
+  </div>
   </section>
 
 
@@ -129,7 +142,17 @@
       </div>
       <div class="grid">
         <div class="grid__item">
-
+          <div class="card" style="width: 45rem;">
+            <img src="images/project_planity.png" class="card-img-top" alt="Projet de recodage site Planity">
+            <div class="card-body">
+              <h3 class="card-title">Recodage de la page d'accueil de Planity</h3>
+              <p class="card-text">Petit projet fait avec un formateur. L'objectif étant de recoder l'intégration de la première partie de la page d'accueil du site Planity</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">HTML</li>
+              <li class="list-group-item">CSS</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -140,7 +163,7 @@
     <div class="container">
       <div class="section__header">
         <h2 class="section__title">Me contacter</h2>
-        <p>Si mon profil vous intéresse, n'hésitez pas à me contacter en utilisant le formulaire ci-dessous (en construction) ou via message sur Linkedin.</p>
+        <p>Si mon profil vous intéresse, n'hésitez pas à me contacter en utilisant le formulaire ci-dessous (en construction) ou par message sur Linkedin.</p>
       </div>
         <form action="contact.php" class="form">
           <label for="firstname">
@@ -149,11 +172,13 @@
           <label for="lastname">
             <input type="text" name="lastname" id="lastname" placeholder="Prénom">
           </label>
-          <label for="firstname">
+          <label for="email">
             <input type="email" name="email" id="email" placeholder="E-mail">
           </label>
           <textarea name="message" id="message" placeholder="Votre message"></textarea>
-          <input type="submit" value="Envoyer">
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-primary" type="button">Envoyer</button>
+          </div>
         </form>    
       </div>
   </section>
@@ -170,10 +195,8 @@
       <div class="grid__item">
         <p>© Copyright - Tous droits réservés</p>
       </div>
-      <div class="grid__item">
-        <a href="https://www.linkedin.com/in/wivineboidoux" target="_blank"><img class="icone__footer_linkedin" src="images/linkedin.svg" alt="icone Linkedin"></a>
-      </div>
     </div>
   </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </html>
